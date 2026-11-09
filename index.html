@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>SoundWave - Wireless Headphones</title>
+
+    <style>
+      :root {
+        --primary-color: #da540c;
+        --dark-color: #22223b;
+        --light-color: #f8f8ff;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: var(--light-color);
+        color: var(--dark-color);
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 8%;
+        background-color: white;
+      }
+
+      header h2 {
+        color: var(--primary-color);
+      }
+
+      nav a {
+        text-decoration: none;
+        color: var(--dark-color);
+        margin-left: 20px;
+      }
+
+      .hero {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 80px 8%;
+        gap: 40px;
+      }
+
+      .hero-text {
+        flex: 1;
+      }
+
+      .hero-text h1 {
+        font-size: 45px;
+        margin-bottom: 20px;
+      }
+
+      .hero-text p {
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 25px;
+      }
+
+      .hero-text button {
+        background-color: var(--primary-color);
+        color: white;
+        border: none;
+        padding: 14px 28px;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      .hero-image {
+        flex: 1;
+        text-align: center;
+      }
+
+      .hero-image img {
+        width: 100%;
+        max-width: 400px;
+        border-radius: 20px;
+      }
+
+      .features {
+        padding: 60px 8%;
+        text-align: center;
+        background-color: white;
+      }
+
+      .features h2 {
+        font-size: 32px;
+        margin-bottom: 35px;
+      }
+
+      .feature-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+      }
+
+      .feature-card {
+        background-color: var(--light-color);
+        padding: 30px 20px;
+        border-radius: 12px;
+      }
+
+      .feature-card h3 {
+        color: var(--primary-color);
+        margin-bottom: 12px;
+      }
+
+      .feature-card p {
+        line-height: 1.5;
+      }
+
+      footer {
+        text-align: center;
+        padding: 25px;
+        background-color: var(--dark-color);
+        color: white;
+      }
+
+      @media (max-width: 768px) {
+        header {
+          flex-direction: column;
+          gap: 15px;
+        }
+
+        nav a {
+          margin: 0 8px;
+        }
+
+        .hero {
+          flex-direction: column;
+          text-align: center;
+          padding: 50px 6%;
+        }
+
+        .hero-text h1 {
+          font-size: 32px;
+        }
+
+        .feature-container {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h2>SoundWave</h2>
+
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero" id="home">
+      <div class="hero-text">
+        <h1>Experience Music Like Never Before</h1>
+
+        <p>
+          Meet SoundWave Wireless Headphones. Enjoy crystal-clear sound, deep
+          bass, and all-day comfort wherever you go.
+        </p>
+
+        <button>Buy Now</button>
+      </div>
+
+      <div class="hero-image">
+        <img
+          src="C:\Users\DELL\Desktop\ayesha vs code\Ronin-R-1500-Bang-Wireless-Headphones.webp"
+          alt="Wireless Headphones"
+        />
+      </div>
+    </section>
+
+    <section class="features" id="features">
+      <h2>Why Choose SoundWave?</h2>
+
+      <div class="feature-container">
+        <div class="feature-card">
+          <h3>Premium Sound</h3>
+
+          <p>Enjoy high-quality sound with powerful bass and clear audio.</p>
+        </div>
+
+        <div class="feature-card">
+          <h3>Long Battery Life</h3>
+
+          <p>
+            Listen to your favorite music for hours without worrying about
+            charging.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <h3>Comfortable Design</h3>
+
+          <p>
+            Soft ear cushions provide comfort even during long listening
+            sessions.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 SoundWave. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
